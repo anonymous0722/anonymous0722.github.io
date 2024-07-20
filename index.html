@@ -116,20 +116,19 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-                The recent wave of AI-generated content has witnessed the great development and success of Text-to-Image (T2I) technologies.
-                By contrast, Text-to-Video (T2V) still falls short of expectations though attracting increasing interests.
-                Existing works either train from scratch or adapt large T2I model to videos, both of which are computation and resource expensive.
-               
+                As a common form of communication in social media, stickers win users’ love in the internet scenarios, for their ability to convey emotions in a vivid, cute, and interesting way.
+                People prefer to get an appropriate sticker through retrieval rather than creation for the reason that creating a sticker is time-consuming and depends on rule-based creative tools with limited capabilities.
+                Nowadays, advanced text-to-video algorithms spawn lots of general video generation systems for users to customize high-quality photo-realistic videos by only providing simple text prompts.
+                However, creating the customized animated sticker, which has lower frame rates and more abstract semantics than video, is greatly hindered by difficulties in data acquisition and incomplete benchmarks.
+                To facilitate the exploration of researchers in animated sticker generation (ASG) field, we firstly construct the currently largest vision-language sticker dataset named ``VSD2M'' at a two-million scale that contains static and animated stickers.
+                Secondly, to enhance the performance of traditional video generation methods on ASG tasks with discrete characteristics, we come up with a \textbf{S}patio \textbf{T}emporal \textbf{I}nteraction (STI) layer that uses semantic interaction and detail preservation to alleviate the insufficient utilization of information.
+                Moreover, we train baselines with several video generation methods (\textit{e.g.,} transformer-based, diffusion-based methods) on VSD2M and conduct a detailed analysis to establish systemic guidances on ASG task.
+                To the best of our knowledge, this is the first large-scale benchmark for multi-frame animated sticker generation, and we hope that this work can give valuable inspiration for other scholars in intelligent creation.
             </p>
-            <p>
-                In this work, we propose a Simple Diffusion Adapter (SimDA) that fine-tunes only 24M out of 1.1B parameters of a strong T2I model, adapting it to video generation in a parameter-efficient way.
-                In particular, we turn the T2I model for T2V by designing light-weight spatial and temporal adapters for transfer learning. Besides, we change the original spatial attention to the proposed Latent-Shift Attention (LSA) for temporal consistency.
-                 With similar model architecture, we further train a video super-resolution model to generate high-definition (1024x1024) videos.
-            </p>
-            <p>
-                In addition to T2V generation in the wild, 
-                SimDA could also be utilized in one-shot video editing with only 2 minutes tuning. Doing so, our method could minimize the training effort with extremely few tunable parameters for model adaptation.
-            </p>
+
+
+
+
           </div>
         </div>
       </div>
